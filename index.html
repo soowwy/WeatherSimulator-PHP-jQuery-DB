@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>Weather Example</title>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="assets/js/weather.js" type="text/javascript"></script>
+    <script src="assets/js/favourite.js" type="text/javascript"></script>
+    <script src="assets/js/selectFav.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset-css.css">
+
+</head>
+<body>
+<script>
+
+</script>                                           <!--This is our navigation menu for choosing towns-->
+    <div id="menu">
+    <select id="selection">
+        <option>--Select Town--</option>
+        <option value="Dubai">Dubai</option>
+        <option value="Sofia">Sofia</option>
+        <option value="Hollywood">Hollywood</option>
+    </select>                                       <!--Here we save it to Favorites-->
+    <select id="fav">
+        <option>Favorites</option>
+    </select>
+    </div>                                          <!--The container which holds all the data-->
+    <div id="container">
+        <div id="towns">
+            <p id="town"></p>
+            <button id="save">Save</button>
+        </div>
+        <div class="info">
+            <p id="day" ></p>
+        </div>
+        <div class="info">
+            <p id="weather"></p>
+        </div>
+        <div id="degree">
+            <p>C | F</p><br/><br/>
+            <p id="celsius"></p>
+            <p id="fahrenheit"></p>
+        </div>
+        <div id="info">
+            <div id="pre">
+                <p>Precipitation:</p>
+                <p id="precipitation"></p>
+            </div>
+            <div id="hum">
+                <p>Humidity:</p>
+                <p id="humidity"></p>
+            </div>
+            <div id="win">
+                <p>Wind:</p>
+                <p id="wind"></p>
+            </div>
+
+        </div>                              <!--The pictures for every day of the week-->
+        <div id="holder">
+            <div id="test1">
+                <a href="javascript:void(0)"><div class="week" id="monday2"><p id="mon">Mon</p><p id="one" class="idk"></p></div></a>
+            </div>
+            <div id="test2">
+                <a href="javascript:void(0)"><div class="week" id="tuesday2"><p id="tue">Tue</p><p id="two" class="idk"></p></div></a>
+            </div >
+            <div id="test3">
+                <a href="javascript:void(0)"><div class="week" id="wednesday2"><p id="wed">Wed</p><p id="three" class="idk"></p></div></a>
+            </div>
+            <div id="test4">
+                <a href="javascript:void(0)"><div class="week" id="thursday2"><p id="thu">Thu</p><p id="four" class="idk"></p></div></a>
+            </div>
+            <div id="test5">
+                <a href="javascript:void(0)"><div class="week" id="friday2"><p id="fri">Fri</p><p id="five" class="idk"></p></div></a>
+            </div>
+            <div id="test6">
+                <a href="javascript:void(0)"><div class="week" id="saturday2"><p id="sat">Sat</p><p id="six" class="idk"></p></div></a>
+            </div>
+            <div id="test7">
+                <a href="javascript:void(0)"><div class="week" id="sunday2"><p id="sun">Sun</p><p id="seven" class="idk"></p></div></a>
+            </div>
+        </div>
+
+        </div>
+
+
+</body>
+</html>
